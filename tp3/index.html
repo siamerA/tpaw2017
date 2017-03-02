@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+         <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="shortcut icon" href="">
+    </head>
+    <body>
+        <div class="container">
+            <h2>TP AW - Formulaire  </h2>
+            Avec Bootstrap & JQuary
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="nom">Nom </label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="nom" placeholder="Entrer nom">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="prenom">Prenom</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="prenom" placeholder="Entrer Prenom">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="date-naissance" >Date de naissance </label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id='dateNaissance' maxlength="10" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="adresse">Adresse </label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="adresse" placeholder="Entrer adresse">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="mail">Mail  </label>
+                    <div class="col-sm-5">
+                        <input type="email" class="form-control" id="mail" placeholder="Entrer mail">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="button" class="btn btn-info btn-lg" id="myBtn"  >Valider  </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="error"></div>
+        <div id="resultat"> </div>
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Erreurs</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Veulliez afficher tous les champs </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+        <!-- Modal  mpas -->
+        <div class="modal fade" id="myModalMaps" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    
+                    <div class="modal-body">
+                        
+                        <p id="resulatDateNaissance"> </p>
+                        <div id="image_map"  > <img src="img/image_paris.JPG" alt="Mountain View"> </div>
+                        <p> <a href="https://www.google.com/maps/place/Paris,+France/@48.8589507,2.2775167,12z/data=!3m1!4b1!4m5!3m4!1s0x47e66e1f06e2b70f:0x40b82c3688c9460!8m2!3d48.856614!4d2.3522219" target="_blank">Avenue des champs élysées, Paris </a> </p>
+                        
+                    </div>
+                    
+                    
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+       
+        <script src="js/vendor/jquery.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        
+         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/formulaire.js"></script>
+        <script src=" js/jquery-1.12.4.js"></script>
+        <script src="js/jquery-ui.js"></script>
+    </body>
+</html>
+

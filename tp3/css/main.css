@@ -1,0 +1,45 @@
+ #error {
+        background-color :pink;
+        padding: 5px;
+        border: solid 1px black;
+        display: none;
+    }
+
+#resultat {
+        background: green;
+        padding: 5px;
+        color: white;
+        display: none;
+    }
+.container{
+         width: 500px;
+    }
+    
+#map{
+        width:400px;
+        height:400px;
+        background:yellow;
+    }
+    
+body{
+        padding-left: 20%;
+        padding-top: 50px;
+     
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
